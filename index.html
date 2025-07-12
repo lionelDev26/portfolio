@@ -3,14 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lidev26 – Développeur Full Stack Java Angular à Paris</title>
-  <meta name="description" content="Développeur full stack Java/Angular basé à Paris avec 4 ans d'expérience. Réalisation d'applications web & mobile performantes pour la banque, l'automobile et projets SaaS.">
-  <meta name="keywords" content="Développeur full stack, Java, Angular, Paris, freelance, Spring Boot, SaaS, application web, EFREI, mobile">
+  <title>Bienvenue chez Lidev26 – Développeur Java & Angular Freelance</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Lidev26 – Développeur freelance spécialisé Java / Angular. Conception d'applications web modernes, performantes et sécurisées. Basé à Lyon, disponible à distance." />
+  <meta name="keywords" content="freelance Java, développeur Angular, développeur web Lyon, full stack, Spring Boot, développement applicatif" />
   <meta name="author" content="Lidev26" />
-  <link rel="icon" type="image/png" href="assets/logos/logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lidev26 – Développeur Java Angular Freelance" />
+  <meta property="og:description" content="Applications web robustes et performantes – Java / Angular / Spring Boot." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lidev26.fr/assets/logos/logo.png" />
+  <meta property="og:url" content="https://lidev26.fr" />
+
+  <link rel="icon" href="assets/logos/logo.png" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animations -->
   <style>
-    .background-static {
+    .wave {
       position: fixed;
       top: 0;
       left: 0;
@@ -18,77 +30,46 @@
       height: 100%;
       z-index: -1;
       background: linear-gradient(-45deg, #0a192f, #112240, #1c3b5a, #243b53);
-      background-size: cover;
+      background-size: 400% 400%;
+      animation: waveAnim 15s ease infinite;
     }
+
+    @keyframes waveAnim {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
   </style>
 </head>
-<body class="min-h-screen flex flex-col font-sans text-white">
 
-  <!-- Fond -->
-  <div class="background-static"></div>
+<body class="relative min-h-screen flex items-center justify-center overflow-hidden text-white font-sans">
 
-  <!-- Header -->
-<header class="fixed top-0 w-full z-50 text-white backdrop-blur-md" style="background: linear-gradient(-45deg, rgba(10,25,47,0.7), rgba(17,34,64,0.7), rgba(28,59,90,0.7), rgba(36,59,83,0.7)); background-size: 400% 400%;">
-  <div class="flex justify-between items-center p-6 max-w-7xl mx-auto">
-    <a href="index.html" class="text-xl font-bold text-white hover:scale-105 transition duration-300 ease-in-out">Lidev26</a>
-    <nav class="space-x-6">
-      <a href="index.html" class="hover:text-[#00BFFF]">Accueil</a>
-      <a href="services.html" class="hover:text-[#00BFFF]">Services</a>
-      <a href="projects.html" class="hover:text-[#00BFFF]">Projets</a>
-      <a href="about.html" class="hover:text-[#00BFFF]">À propos</a>
-      <a href="contact.html" class="hover:text-[#00BFFF]">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- Fond animé -->
+  <div class="wave"></div>
 
-  <!-- Contenu -->
-  <main class="flex-1 pt-28 px-6 py-10 max-w-6xl mx-auto">
-    <section class="text-center py-20">
-      <h1 class="text-4xl font-bold mb-4 text-[#00BFFF]">Développeur Full Stack Java / Angular</h1>
-      <h2 class="text-2xl font-semibold mb-6">Basé à Paris – 4 ans d'expérience</h2>
-      <p class="text-lg mb-4 text-gray-300">
-        Je conçois des applications web et mobiles robustes, performantes et modernes.
-      </p>
-      <p class="text-md mb-6 text-gray-300">
-Diplômé de l’EFREI Paris, j’ai évolué dans des environnements exigeants tels que la banque, l’automobile et l’associatif. Cette diversité m’a permis de développer une approche agile, centrée sur les besoins métiers, et de livrer des applications fiables, performantes et pensées pour les utilisateurs finaux.      </p>
-      <div class="space-x-4">
-        <a href="projects.html" class="bg-[#00BFFF] hover:bg-[#87CEEB] text-white px-6 py-2 rounded">Voir mes projets</a>
-        <a href="contact.html" class="border border-white px-6 py-2 rounded hover:bg-white hover:text-[#0a192f] transition">Me contacter</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-<footer class="text-center text-sm text-gray-400 py-6 bg-transparent mt-auto">
-  <p>© 2025 Lidev26 – Tous droits réservés</p>
-  <p>Contact : <a href="mailto:contact@lidev26.fr" class="text-[#87CEEB] hover:underline">contact@lidev26.fr</a></p>
-
-  <div class="flex justify-center items-center space-x-4 mt-4">
-<a href="https://github.com/tonprofil" target="_blank" aria-label="GitHub" class="inline-block w-6 h-6 hover:text-[#87CEEB] transition">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-    <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.385.6.113.793-.26.793-.577
-      0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61C4.422
-      17.07 3.633 16.7 3.633 16.7c-1.087-.744.083-.729.083-.729 1.205.085
-      1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.305.762-1.605-2.665-.3-5.467-1.335-5.467-5.93
-      0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322
-      3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404
-      2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84
-      1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81
-      2.215 0 1.6-.015 2.885-.015 3.28 0 .315.195.69.8.57C20.565 21.795
-      24 17.295 24 12c0-6.627-5.373-12-12-12z"/>
-  </svg>
-</a>
-    <a href="https://www.instagram.com/tonprofil" target="_blank" class="hover:text-[#87CEEB]" aria-label="Instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.5a1 1 0 110 2 1 1 0 010-2z"/>
-      </svg>
+  <!-- Contenu principal -->
+  <main class="text-center px-6 relative z-10">
+    <h1 class="text-5xl font-extrabold mb-6 fade-in delay-1">Lidev26</h1>
+    <p class="text-xl mb-8 fade-in delay-2">Développeur Full Stack Java / Angular</p>
+    <a href="accueil.html"
+       class="fade-in delay-3 inline-block bg-white text-[#0a192f] text-lg px-8 py-3 rounded shadow hover:scale-105 transition-transform duration-300">
+      Entrer sur le site
     </a>
-<a href="https://twitter.com/tonprofil" target="_blank"  aria-label="X / Twitter" class="inline-block w-6 h-6 hover:text-[#87CEEB] transition">
-<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
-</a>
-
-  </div>
-</footer>
+  </main>
 
 </body>
 </html>
