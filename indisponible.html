@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/logos/logo.png" type="image/x-icon">
+  <title>Contenu indisponible – Lidev26</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .background-static {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%; z-index: -1;
+      background: linear-gradient(-45deg, #0a192f, #112240, #1c3b5a, #243b53);
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col text-white font-sans">
+
+  <div class="background-static"></div>
+  
+<header class="fixed top-0 w-full z-50 text-white backdrop-blur-md" style="background: linear-gradient(-45deg, rgba(10,25,47,0.7), rgba(17,34,64,0.7), rgba(28,59,90,0.7), rgba(36,59,83,0.7)); background-size: 400% 400%;">
+  <div class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+    <a href="index.html" class="text-xl font-bold text-white hover:scale-105 transition duration-300 ease-in-out">Lidev26</a>
+    <nav class="space-x-6">
+      <a href="index.html" class="hover:text-[#00BFFF]">Accueil</a>
+      <a href="services.html" class="hover:text-[#00BFFF]">Services</a>
+      <a href="projects.html" class="hover:text-[#00BFFF]">Projets</a>
+      <a href="about.html" class="hover:text-[#00BFFF]">À propos</a>
+      <a href="contact.html" class="hover:text-[#00BFFF]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="flex-1 flex flex-col items-center justify-center text-center px-6 py-10">
+    <h2 class="text-4xl font-semibold mb-4">Contenu indisponible</h2>
+    <p class="text-lg mb-8">Désolé, cette page n'est pas disponible pour le moment.</p>
+    <a href="projects.html" class="bg-[#00BFFF] hover:bg-[#87CEEB] text-white px-6 py-3 rounded transition">
+      Retour aux projets
+    </a>
+  </main>
+
+  <footer class="text-center text-sm text-gray-400 py-6 bg-transparent mt-auto">
+    <p>© 2025 Lidev26 – Tous droits réservés</p>
+    <p>Contact : <a href="mailto:contact@lidev26.fr" class="text-[#87CEEB] hover:underline">contact@lidev26.fr</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bienvenue chez Lidev26 – Développeur Java & Angular Freelance</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Lidev26 – Développeur freelance spécialisé Java / Angular. Conception d'applications web modernes, performantes et sécurisées. Basé à Lyon, disponible à distance." />
+  <meta name="keywords" content="freelance Java, développeur Angular, développeur web Lyon, full stack, Spring Boot, développement applicatif" />
+  <meta name="author" content="Lidev26" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lidev26 – Développeur Java Angular Freelance" />
+  <meta property="og:description" content="Applications web robustes et performantes – Java / Angular / Spring Boot." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lidev26.fr/assets/logos/logo.png" />
+  <meta property="og:url" content="https://lidev26.fr" />
+
+  <link rel="icon" href="assets/logos/logo.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animations -->
+  <style>
+    .wave {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(-45deg, #0a192f, #112240, #1c3b5a, #243b53);
+      background-size: 400% 400%;
+      animation: waveAnim 15s ease infinite;
+    }
+
+    @keyframes waveAnim {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+  </style>
+</head>
+
+<body class="relative min-h-screen flex items-center justify-center overflow-hidden text-white font-sans">
+
+  <!-- Fond animé -->
+  <div class="wave"></div>
+
+  <!-- Contenu principal -->
+  <main class="text-center px-6 relative z-10">
+    <h1 class="text-5xl font-extrabold mb-6 fade-in delay-1">Lidev26</h1>
+    <p class="text-xl mb-8 fade-in delay-2">Développeur Full Stack Java / Angular</p>
+    <a href="index.html"
+       class="fade-in delay-3 inline-block bg-white text-[#0a192f] text-lg px-8 py-3 rounded shadow hover:scale-105 transition-transform duration-300">
+      Entrer sur le site
+    </a>
+  </main>
+
+</body>
+</html>
